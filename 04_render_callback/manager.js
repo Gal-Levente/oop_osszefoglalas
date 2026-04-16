@@ -26,10 +26,10 @@ class Manager {
      */
     getEmptyList() {
         this.#list = [];
-        this.#renderCallback?.(this.#list);
+        this.#renderCallback(this.#list);
     }
     getAllElement() {
-        this.#renderCallback?.(this.#list);
+        this.#renderCallback(this.#list);
         return this.#list;
     }
 }
